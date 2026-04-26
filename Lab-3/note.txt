@@ -1,0 +1,1 @@
+It is a JSON (JavaScript Object Notation) file that stores vital metadata about the project and is essential for the Node Package Manager (npm) to manage dependencies, run scripts, and identify the project's properties.It is used to transmit data in web application between a server and a client.
