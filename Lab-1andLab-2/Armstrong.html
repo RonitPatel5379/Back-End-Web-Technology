@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    n = parseInt(prompt("Enter a number"))
+    digit=0,sum=0,num=n,x=n
+    while(n!=0) {
+      digit++;
+      n=parseInt(n/10)
+    }
+    while(num!=0) {
+      rem=num%10
+      sum = sum + Math.pow(rem,digit)
+      num=parseInt(num/10)
+    }
+    if(sum==x) {
+      alert("Armstrong Number")
+    }
+    else {
+      alert("Not Armstrong Number")
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sum(a,b,mycallback) {
+      sum = a+b
+      mycallback(sum)
+    }
+    function sumans(ans) {
+      document.write("Ans=" + ans)
+    }
+    sum(4,5,sumans)
+  </script>
+</body>
+</html>

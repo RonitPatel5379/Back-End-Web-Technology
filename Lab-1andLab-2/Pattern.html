@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // for(i=1;i<=5;i++) {
+    //   for(j=0;j<5-i;j++) {
+    //     document.write("&nbsp")
+    //   }
+    //   for(k=1;k<=i;k++) {
+    //     document.write("*")
+    //   }
+    //   document.write("<br/>")
+    // }
+    n = parseInt(prompt("Enter a number"))
+    a = []
+    for(i=0;i<n;i++) {
+      a[i] = []
+      for(j=0;j<=i;j++) {
+        a[i][j] = 0
+        if(j==0||j==i) {
+          a[i][j] = 1
+        }
+        else {
+          a[i][j] = a[i-1][j-1] + a[i-1][j]
+        }
+      }
+    }
+    for(i=0;i<n;i++) {
+      for(k=0;k<n-i-1;k++) {
+        document.write("&nbsp")
+      }
+      for(j=0;j<=i;j++) {
+        document.write(a[i][j] + " ")
+      }
+      document.write("<br/>")
+    }
+  </script>
+</body>
+</html>
