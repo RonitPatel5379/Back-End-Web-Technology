@@ -1,0 +1,13 @@
+NEXTJS - NOTE
+Building a modern Next.js application (using the App Router) requires a balance between convention and flexibility. Since Next.js 13+, the structure has shifted from a file-based routing system in the pages directory to a more robust, nested layout system in the app directory.
+
+=> The Root Directory
+The top-level files manage configurations, environment variables, and dependencies. 
+
+File/Folder 	  Purpose
+/app	          The core of your application (Routes, Layouts, Components).
+/public	        Static assets like images, fonts, and SVGs accessible via /.
+next.config.js	Custom configuration for Next.js (rewrites, redirects, images).
+package.json	  Dependencies and scripts (dev, build, start).
+tailwind.config.ts	Styling configurations (if using Tailwind CSS).
+.env.local	    Private environment variables.
